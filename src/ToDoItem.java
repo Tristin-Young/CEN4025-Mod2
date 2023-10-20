@@ -1,15 +1,19 @@
+//ToDoItem class
 public class ToDoItem {
 
+    // Fields
     private String itemName;
     private String itemDescription;
     private boolean isDone;
 
+    // Constructor
     public ToDoItem(String itemName, String itemDescription) {
         this.itemName = itemName;
         this.itemDescription = itemDescription;
         this.isDone = false;
     }
 
+    // Methods
     public String getItemName() {
         return itemName;
     }
@@ -34,6 +38,7 @@ public class ToDoItem {
         this.isDone = isDone;
     }
 
+    // Override toString method
     public String toString() {
         return "Item Name: " + itemName + "\nItem Description: " + itemDescription + "\nIs Done: " + isDone;
     }
